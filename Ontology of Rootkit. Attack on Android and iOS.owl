@@ -1,0 +1,1000 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#Adware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Android"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Android_Runtime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antivirus_Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#App_Sandboxing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Application_Sandbox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Applications_Exploits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Attack_Vector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Banking_Trojan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BehaviorAnalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bootkit_Injection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bootloader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bootloader_Injection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Browser_Exploits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Code_injection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crypto_Ransomware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DLL_Injection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Direct_Kernel_Object_Manipulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disk_Encryption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drive-By_Download"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dynamic_Analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evil_Maid_Attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exploit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fake_Applications"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#File_Encryption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#File_System_Hooking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#File_System_Monitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Firmware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Firmware_Modification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Firmware_Rootkit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Firmware_Updates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GPT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heuristic_Analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hiding_Files"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hooked_Libraries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hooking_API_Calls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hypervisor_Rootkit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Injecting_Adware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kernel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kernel-Mode_Rootkit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kernel_Debugging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kernel_Exploits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kernel_Hooking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kernel_Modules"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Keylogger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Locker_Ransomware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Malicios_SDK"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Malicios_application"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Malvertising"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Malware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Man-in-the-Browser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Masking_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Master_Boot_Record"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measured_Boot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Memory_Manipulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mobile_Locker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mobile_Operating_System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OS_Exploits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patch_Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Persistent_Bootkits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_Access"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pop-Up_Adware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Privilege_Escalation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process_Holowing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process_Injection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process_Isolation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protection_Mechanisms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ransomware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remote_Access_Trojan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remote_Code_Execution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remote_Thread_Injection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Root_Detection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rooting_Exploits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rootkit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rootkit-Based_Encryption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SMS_Phishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Screen_Capture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Secure_Boot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Secure_Boot_Bypass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Secure_Enclave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Security_Updates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shadow_Page_Table_Attacks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Signature-Based_Detection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spear_Phishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spyware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Static_Analysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_Components"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_Integrity_Checks"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_Libraries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_Locker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trojan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trusted_Boot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type-1_Hypervisor_Rootkit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Type-2_Hypervisor_Rootkit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UEFI/BIOS_Attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#USB_Injection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User-Mode_Rootkit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Userland_Exploits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Virtual_Machine_Control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voice_Phishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Web_Injects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zero-day"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iOS"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bypasses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deliverebBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#infects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#prevents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#targets"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#affectsOS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#attackSuccessRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bypassesSecurityMechanisms"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#exploitsVulnerability"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDetectioRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFinancialImpact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPersistenceDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStealthLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#requiresRootAccess"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#spreadsViaNetwork"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wasUsedInRealAttack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agent_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Android_System_Libraries"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Apple_Security_Updates"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baseband_Firmware"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Behavior_Analysis_in_Play_Store"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BlueBorne"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cerber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Drive-By_Download_Exploit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Email_Phishing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evil_USB_Charger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fake_WhatsApp_Update"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Google_Play_Protect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HummingBad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Invisible_Man"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jailbreak_Detection_API"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Know_Secure_Boot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Locky"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pegasus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Remote_Code_Execution_via_SMS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SELinux"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Samsung_Galaxy_S23"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Secure_Boot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tizi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TrickBot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#XHelper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Xiaomi_Redmi_Note_11_Pro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#iOS_Sandbox"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Adware"/>
+        <Class IRI="#Malware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Android"/>
+        <Class IRI="#Mobile_Operating_System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Android_Runtime"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antivirus_Software"/>
+        <Class IRI="#Protection_Mechanisms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#App_Sandboxing"/>
+        <Class IRI="#iOS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Application_Sandbox"/>
+        <Class IRI="#User_Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Applications_Exploits"/>
+        <Class IRI="#Zero-day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Banking_Trojan"/>
+        <Class IRI="#Trojan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BehaviorAnalysis"/>
+        <Class IRI="#Protection_Mechanisms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bootkit_Injection"/>
+        <Class IRI="#Bootloader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bootloader"/>
+        <Class IRI="#System_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bootloader_Injection"/>
+        <Class IRI="#Firmware_Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Browser_Exploits"/>
+        <Class IRI="#Drive-By_Download"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Code_injection"/>
+        <Class IRI="#User-Mode_Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crypto_Ransomware"/>
+        <Class IRI="#Ransomware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DLL_Injection"/>
+        <Class IRI="#Code_injection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Direct_Kernel_Object_Manipulation"/>
+        <Class IRI="#Memory_Manipulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disk_Encryption"/>
+        <Class IRI="#Crypto_Ransomware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drive-By_Download"/>
+        <Class IRI="#Attack_Vector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dynamic_Analysis"/>
+        <Class IRI="#BehaviorAnalysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evil_Maid_Attack"/>
+        <Class IRI="#Physical_Access"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exploit"/>
+        <Class IRI="#Attack_Vector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fake_Applications"/>
+        <Class IRI="#Malicios_application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#File_Encryption"/>
+        <Class IRI="#Crypto_Ransomware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#File_System_Hooking"/>
+        <Class IRI="#Hiding_Files"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#File_System_Monitoring"/>
+        <Class IRI="#Root_Detection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Firmware"/>
+        <Class IRI="#System_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Firmware_Modification"/>
+        <Class IRI="#UEFI/BIOS_Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Firmware_Rootkit"/>
+        <Class IRI="#Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Firmware_Updates"/>
+        <Class IRI="#Security_Updates"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GPT"/>
+        <Class IRI="#Bootloader_Injection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heuristic_Analysis"/>
+        <Class IRI="#Antivirus_Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hiding_Files"/>
+        <Class IRI="#User-Mode_Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hooked_Libraries"/>
+        <Class IRI="#Firmware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hooking_API_Calls"/>
+        <Class IRI="#Masking_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hypervisor_Rootkit"/>
+        <Class IRI="#Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Injecting_Adware"/>
+        <Class IRI="#Adware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kernel"/>
+        <Class IRI="#System_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kernel-Mode_Rootkit"/>
+        <Class IRI="#Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kernel_Debugging"/>
+        <Class IRI="#Kernel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kernel_Exploits"/>
+        <Class IRI="#Privilege_Escalation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kernel_Hooking"/>
+        <Class IRI="#Kernel-Mode_Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kernel_Modules"/>
+        <Class IRI="#Kernel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Keylogger"/>
+        <Class IRI="#Remote_Access_Trojan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Locker_Ransomware"/>
+        <Class IRI="#Ransomware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malicios_SDK"/>
+        <Class IRI="#Malicios_application"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malicios_application"/>
+        <Class IRI="#Attack_Vector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malvertising"/>
+        <Class IRI="#Drive-By_Download"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Man-in-the-Browser"/>
+        <Class IRI="#Banking_Trojan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Masking_Process"/>
+        <Class IRI="#User-Mode_Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Master_Boot_Record"/>
+        <Class IRI="#Bootloader_Injection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measured_Boot"/>
+        <Class IRI="#Secure_Boot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Memory_Manipulation"/>
+        <Class IRI="#Kernel-Mode_Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mobile_Locker"/>
+        <Class IRI="#Locker_Ransomware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OS_Exploits"/>
+        <Class IRI="#Zero-day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patch_Management"/>
+        <Class IRI="#Security_Updates"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Persistent_Bootkits"/>
+        <Class IRI="#UEFI/BIOS_Attack"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phishing"/>
+        <Class IRI="#Attack_Vector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_Access"/>
+        <Class IRI="#Attack_Vector"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pop-Up_Adware"/>
+        <Class IRI="#Adware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Privilege_Escalation"/>
+        <Class IRI="#Exploit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process_Holowing"/>
+        <Class IRI="#Code_injection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process_Injection"/>
+        <Class IRI="#Masking_Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process_Isolation"/>
+        <Class IRI="#User_Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protection_Mechanisms"/>
+        <Class IRI="#System_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ransomware"/>
+        <Class IRI="#Malware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remote_Access_Trojan"/>
+        <Class IRI="#Trojan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remote_Code_Execution"/>
+        <Class IRI="#Exploit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remote_Thread_Injection"/>
+        <Class IRI="#Code_injection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Root_Detection"/>
+        <Class IRI="#Protection_Mechanisms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rooting_Exploits"/>
+        <Class IRI="#Android"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rootkit-Based_Encryption"/>
+        <Class IRI="#Hiding_Files"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SMS_Phishing"/>
+        <Class IRI="#Phishing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Screen_Capture"/>
+        <Class IRI="#Remote_Access_Trojan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Secure_Boot"/>
+        <Class IRI="#Protection_Mechanisms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Secure_Boot_Bypass"/>
+        <Class IRI="#Bootloader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Secure_Enclave"/>
+        <Class IRI="#iOS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Security_Updates"/>
+        <Class IRI="#Protection_Mechanisms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shadow_Page_Table_Attacks"/>
+        <Class IRI="#Memory_Manipulation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Signature-Based_Detection"/>
+        <Class IRI="#Antivirus_Software"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spear_Phishing"/>
+        <Class IRI="#Phishing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spyware"/>
+        <Class IRI="#Malware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Static_Analysis"/>
+        <Class IRI="#BehaviorAnalysis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_Integrity_Checks"/>
+        <Class IRI="#Root_Detection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_Libraries"/>
+        <Class IRI="#System_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_Locker"/>
+        <Class IRI="#Locker_Ransomware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trojan"/>
+        <Class IRI="#Malware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trusted_Boot"/>
+        <Class IRI="#Secure_Boot"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type-1_Hypervisor_Rootkit"/>
+        <Class IRI="#Virtual_Machine_Control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Type-2_Hypervisor_Rootkit"/>
+        <Class IRI="#Virtual_Machine_Control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UEFI/BIOS_Attack"/>
+        <Class IRI="#Firmware_Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#USB_Injection"/>
+        <Class IRI="#Physical_Access"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User-Mode_Rootkit"/>
+        <Class IRI="#Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_Space"/>
+        <Class IRI="#System_Components"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Userland_Exploits"/>
+        <Class IRI="#Privilege_Escalation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Virtual_Machine_Control"/>
+        <Class IRI="#Hypervisor_Rootkit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voice_Phishing"/>
+        <Class IRI="#Phishing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Web_Injects"/>
+        <Class IRI="#Banking_Trojan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zero-day"/>
+        <Class IRI="#Exploit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iOS"/>
+        <Class IRI="#Mobile_Operating_System"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bypasses"/>
+        <Class IRI="#Malware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deliverebBy"/>
+        <Class IRI="#Malware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#infects"/>
+        <Class IRI="#Rootkit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#prevents"/>
+        <Class IRI="#Protection_Mechanisms"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#targets"/>
+        <Class IRI="#Malware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bypasses"/>
+        <Class IRI="#Protection_Mechanisms"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#deliverebBy"/>
+        <Class IRI="#Attack_Vector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#infects"/>
+        <Class IRI="#System_Components"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#prevents"/>
+        <Class IRI="#Attack_Vector"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#targets"/>
+        <Class IRI="#Mobile_Operating_System"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#affectsOS"/>
+        <Class IRI="#Malware"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#attackSuccessRate"/>
+        <Class IRI="#Malware"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#bypassesSecurityMechanisms"/>
+        <Class IRI="#Rootkit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#exploitsVulnerability"/>
+        <Class IRI="#Exploit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDetectioRate"/>
+        <Class IRI="#Protection_Mechanisms"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFinancialImpact"/>
+        <Class IRI="#Malware"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPersistenceDuration"/>
+        <Class IRI="#Rootkit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStealthLevel"/>
+        <Class IRI="#Rootkit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#requiresRootAccess"/>
+        <Class IRI="#Exploit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#spreadsViaNetwork"/>
+        <Class IRI="#Malware"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#wasUsedInRealAttack"/>
+        <Class IRI="#Rootkit"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#affectsOS"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#attackSuccessRate"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#bypassesSecurityMechanisms"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#exploitsVulnerability"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDetectioRate"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFinancialImpact"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPersistenceDuration"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStealthLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#requiresRootAccess"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#spreadsViaNetwork"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#wasUsedInRealAttack"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

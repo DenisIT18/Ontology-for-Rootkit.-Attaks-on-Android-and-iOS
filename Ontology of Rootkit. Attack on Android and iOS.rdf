@@ -1,0 +1,1204 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#"
+     xml:base="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#bypasses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#bypasses">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Protection_Mechanisms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#deliverebBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#deliverebBy">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Attack_Vector"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#infects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#infects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Components"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#prevents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#prevents">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Attack_Vector"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Protection_Mechanisms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#targets -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#targets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Mobile_Operating_System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#affectsOS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#affectsOS">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#attackSuccessRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#attackSuccessRate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#bypassesSecurityMechanisms -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#bypassesSecurityMechanisms">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#exploitsVulnerability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#exploitsVulnerability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Exploit"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#hasDetectioRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#hasDetectioRate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Protection_Mechanisms"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#hasFinancialImpact -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#hasFinancialImpact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#hasPersistenceDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#hasPersistenceDuration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#hasStealthLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#hasStealthLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#requiresRootAccess -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#requiresRootAccess">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Exploit"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#spreadsViaNetwork -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#spreadsViaNetwork">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#wasUsedInRealAttack -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#wasUsedInRealAttack">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Adware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Adware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Android -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Android">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Mobile_Operating_System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Android_Runtime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Android_Runtime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Android"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Antivirus_Software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Antivirus_Software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Protection_Mechanisms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#App_Sandboxing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#App_Sandboxing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#iOS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Application_Sandbox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Application_Sandbox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#User_Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Applications_Exploits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Applications_Exploits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Zero-day"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Attack_Vector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Attack_Vector"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Banking_Trojan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Banking_Trojan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Trojan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#BehaviorAnalysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#BehaviorAnalysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Protection_Mechanisms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Bootkit_Injection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Bootkit_Injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Bootloader"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Bootloader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Bootloader">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Bootloader_Injection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Bootloader_Injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Firmware_Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Browser_Exploits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Browser_Exploits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Drive-By_Download"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Code_injection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Code_injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#User-Mode_Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Crypto_Ransomware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Crypto_Ransomware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Ransomware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#DLL_Injection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#DLL_Injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Code_injection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Direct_Kernel_Object_Manipulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Direct_Kernel_Object_Manipulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Memory_Manipulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Disk_Encryption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Disk_Encryption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Crypto_Ransomware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Drive-By_Download -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Drive-By_Download">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Attack_Vector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Dynamic_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Dynamic_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#BehaviorAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Evil_Maid_Attack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Evil_Maid_Attack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Physical_Access"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Exploit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Exploit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Attack_Vector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Fake_Applications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Fake_Applications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malicios_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#File_Encryption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#File_Encryption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Crypto_Ransomware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#File_System_Hooking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#File_System_Hooking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Hiding_Files"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#File_System_Monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#File_System_Monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Root_Detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Firmware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Firmware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Firmware_Modification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Firmware_Modification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#UEFI/BIOS_Attack"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Firmware_Rootkit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Firmware_Rootkit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Firmware_Updates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Firmware_Updates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Security_Updates"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#GPT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#GPT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Bootloader_Injection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Heuristic_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Heuristic_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Antivirus_Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Hiding_Files -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Hiding_Files">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#User-Mode_Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Hooked_Libraries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Hooked_Libraries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Firmware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Hooking_API_Calls -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Hooking_API_Calls">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Masking_Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Hypervisor_Rootkit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Hypervisor_Rootkit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Injecting_Adware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Injecting_Adware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Adware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel-Mode_Rootkit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel-Mode_Rootkit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel_Debugging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel_Debugging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel_Exploits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel_Exploits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Privilege_Escalation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel_Hooking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel_Hooking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel-Mode_Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel_Modules -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel_Modules">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Keylogger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Keylogger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Remote_Access_Trojan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Locker_Ransomware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Locker_Ransomware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Ransomware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malicios_SDK -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malicios_SDK">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malicios_application"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malicios_application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malicios_application">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Attack_Vector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malvertising -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malvertising">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Drive-By_Download"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Man-in-the-Browser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Man-in-the-Browser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Banking_Trojan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Masking_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Masking_Process">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#User-Mode_Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Master_Boot_Record -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Master_Boot_Record">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Bootloader_Injection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Measured_Boot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Measured_Boot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Secure_Boot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Memory_Manipulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Memory_Manipulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Kernel-Mode_Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Mobile_Locker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Mobile_Locker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Locker_Ransomware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Mobile_Operating_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Mobile_Operating_System"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#OS_Exploits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#OS_Exploits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Zero-day"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Patch_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Patch_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Security_Updates"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Persistent_Bootkits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Persistent_Bootkits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#UEFI/BIOS_Attack"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Phishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Phishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Attack_Vector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Physical_Access -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Physical_Access">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Attack_Vector"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Pop-Up_Adware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Pop-Up_Adware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Adware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Privilege_Escalation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Privilege_Escalation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Exploit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Process_Holowing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Process_Holowing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Code_injection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Process_Injection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Process_Injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Masking_Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Process_Isolation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Process_Isolation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#User_Space"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Protection_Mechanisms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Protection_Mechanisms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Ransomware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Ransomware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Remote_Access_Trojan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Remote_Access_Trojan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Trojan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Remote_Code_Execution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Remote_Code_Execution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Exploit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Remote_Thread_Injection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Remote_Thread_Injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Code_injection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Root_Detection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Root_Detection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Protection_Mechanisms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rooting_Exploits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rooting_Exploits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Android"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit-Based_Encryption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit-Based_Encryption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Hiding_Files"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#SMS_Phishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#SMS_Phishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Phishing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Screen_Capture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Screen_Capture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Remote_Access_Trojan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Secure_Boot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Secure_Boot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Protection_Mechanisms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Secure_Boot_Bypass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Secure_Boot_Bypass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Bootloader"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Secure_Enclave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Secure_Enclave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#iOS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Security_Updates -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Security_Updates">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Protection_Mechanisms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Shadow_Page_Table_Attacks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Shadow_Page_Table_Attacks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Memory_Manipulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Signature-Based_Detection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Signature-Based_Detection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Antivirus_Software"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Spear_Phishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Spear_Phishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Phishing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Spyware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Spyware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Static_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Static_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#BehaviorAnalysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Components -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Components"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Integrity_Checks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Integrity_Checks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Root_Detection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Libraries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Libraries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Locker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Locker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Locker_Ransomware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Trojan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Trojan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Malware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Trusted_Boot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Trusted_Boot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Secure_Boot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Type-1_Hypervisor_Rootkit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Type-1_Hypervisor_Rootkit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Virtual_Machine_Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Type-2_Hypervisor_Rootkit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Type-2_Hypervisor_Rootkit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Virtual_Machine_Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#UEFI/BIOS_Attack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#UEFI/BIOS_Attack">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Firmware_Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#USB_Injection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#USB_Injection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Physical_Access"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#User-Mode_Rootkit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#User-Mode_Rootkit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#User_Space -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#User_Space">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#System_Components"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Userland_Exploits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Userland_Exploits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Privilege_Escalation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Virtual_Machine_Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Virtual_Machine_Control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Hypervisor_Rootkit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Voice_Phishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Voice_Phishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Phishing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Web_Injects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Web_Injects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Banking_Trojan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Zero-day -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Zero-day">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Exploit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#iOS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#iOS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Mobile_Operating_System"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Agent_Smith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Agent_Smith"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Android_System_Libraries -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Android_System_Libraries"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Apple_Security_Updates -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Apple_Security_Updates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Baseband_Firmware -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Baseband_Firmware"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Behavior_Analysis_in_Play_Store -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Behavior_Analysis_in_Play_Store"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#BlueBorne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#BlueBorne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Cerber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Cerber"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Drive-By_Download_Exploit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Drive-By_Download_Exploit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Email_Phishing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Email_Phishing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Evil_USB_Charger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Evil_USB_Charger"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Fake_WhatsApp_Update -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Fake_WhatsApp_Update"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Google_Play_Protect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Google_Play_Protect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#HummingBad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#HummingBad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Invisible_Man -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Invisible_Man"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Jailbreak_Detection_API -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Jailbreak_Detection_API"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Know_Secure_Boot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Know_Secure_Boot"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Locky -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Locky"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Pegasus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Pegasus"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Remote_Code_Execution_via_SMS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Remote_Code_Execution_via_SMS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#SELinux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#SELinux"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Samsung_Galaxy_S23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Samsung_Galaxy_S23"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Secure_Boot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Secure_Boot"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Tizi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Tizi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#TrickBot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#TrickBot"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#XHelper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#XHelper"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Xiaomi_Redmi_Note_11_Pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#Xiaomi_Redmi_Note_11_Pro"/>
+    
+
+
+    <!-- http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#iOS_Sandbox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/денис/ontologies/2025/1/untitled-ontology-27#iOS_Sandbox"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
